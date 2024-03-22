@@ -1,26 +1,16 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const navLink = (
         <>
             <li>
-                <NavLink to={"/"}>
-                    {" "}
-                    <a>Home</a>
-                </NavLink>
+                <NavLink to={"/"}> Home</NavLink>
             </li>
             <li>
-                <NavLink to={"/login"}>
-                    {" "}
-                    <a>Login</a>
-                </NavLink>
+                <NavLink to={"/login"}> Login</NavLink>
             </li>
             <li>
-                <NavLink to={"/register"}>
-                    {" "}
-                    <a>Register</a>
-                </NavLink>
+                <NavLink to={"/register"}> Register</NavLink>
             </li>
         </>
     );
@@ -56,7 +46,7 @@ const Navbar = () => {
                             {navLink}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <a className="btn btn-ghost text-xl">Moha milon</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">{navLink}</ul>
